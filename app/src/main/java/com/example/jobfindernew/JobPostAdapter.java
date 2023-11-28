@@ -3,43 +3,53 @@ package com.example.jobfindernew;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class JobPostAdapter extends ArrayAdapter<JobPost> {
+public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.ViewHolder> {
 
     private final List<JobPost> jobPosts;
 
-    public JobPostAdapter(final List<JobPost> jobPosts) {
-        super(context, 0, jobPosts);
+    public JobPostAdapter(List<JobPost> jobPosts) {
         this.jobPosts = jobPosts;
     }
 
     @NonNull
     @Override
-    public View getView(final int position, @Nullable View convertView, @NonNull final ViewGroup parent) {
-        if (null == convertView) {
-            convertView = LayoutInflater.from(this.getContext()).inflate(R.layout.item_job_post, parent, false);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_job_post, parent, false);
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        JobPost jobPost = jobPosts.get(position);
+
+        holder.tvTitle.setText(jobPost.getDescription());
+        holder.tvPosition.setText("Position: " + jobPost.getPosition());
+        holder.tvIndustry.setText("Industry: " + jobPost.getIndustry());
+        holder.tvLocation.setText("Location: " + jobPost.getLocation());
+    }
+
+    @Override
+    public int getItemCount() {
+        return jobPosts.size();
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        TextView tvTitle, tvPosition, tvIndustry, tvLocation;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            tvTitle = itemView.findViewById(R.id.tv_title);
+            tvPosition = itemView.findViewById(R.id.tv_position);
+            tvIndustry = itemView.findViewById(R.id.tv_industry);
+            tvLocation = itemView.findViewById(R.id.tv_location);
         }
-
-        // Bind data to views
-        final JobPost jobPost = this.getItem(position);
-        if (null != jobPost) {
-            final TextView tvTitle = convertView.findViewById(R.id.tv_title);
-            final TextView tvPosition = convertView.findViewById(R.id.tv_position);
-            final TextView tvIndustry = convertView.findViewById(R.id.tv_industry);
-            final TextView tvLocation = convertView.findViewById(R.id.tv_location);
-
-            tvTitle.setText(jobPost.getDescription());
-            tvPosition.setText("Position: " + jobPost.getPosition());
-            tvIndustry.setText("Industry: " + jobPost.getIndustry());
-            tvLocation.setText("Location: " + jobPost.getLocation());
-        }
-
-        return convertView;
     }
 }
+

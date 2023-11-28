@@ -39,5 +39,9 @@ public class JobPost {
     public String getLocation() {
         return this.location;
     }
+
+    public String getDescription() {
+        return this.description;
+    }
 }
 
