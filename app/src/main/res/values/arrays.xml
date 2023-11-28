@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="position_array">
+        <item>All</item>
+        <item>Marketing Coordinator</item>
+        <item>Digital Marketing Specialist</item>
+        <item>Social Media Manager</item>
+        <item>Content Marketing Strategist</item>
+        <item>Software Developer</item>
+        <item>Systems Analyst</item>
+        <item>IT Project Manager</item>
+        <item>Network Administrator</item>
+        <item>Financial Analyst</item>
+        <item>Accountant</item>
+        <item>Investment Analyst</item>
+        <item>Financial Planner</item>
+        <item>Registered Nurse</item>
+        <item>Medical Technologist</item>
+        <item>Healthcare Administrator</item>
+        <item>Physical Therapist</item>
+        <item>Teacher (various subjects)</item>
+        <item>Education Coordinator</item>
+        <item>Academic Advisor</item>
+        <item>Instructional Designer</item>
+        <item>Sales Representative</item>
+        <item>Account Executive</item>
+        <item>Sales Manager</item>
+        <item>Business Development Specialist</item>
+        <item>HR Generalist</item>
+        <item>Talent Acquisition Specialist</item>
+        <item>HR Manager</item>
+        <item>Compensation Analyst</item>
+        <item>Mechanical Engineer</item>
+        <item>Civil Engineer</item>
+        <item>Electrical Engineer</item>
+        <item>Software Engineer</item>
+        <item>Customer Support Representative</item>
+        <item>Customer Success Manager</item>
+        <item>Call Center Supervisor</item>
+        <item>Client Services Coordinator</item>
+        <item>Administrative Assistant</item>
+        <item>Office Manager</item>
+        <item>Executive Assistant</item>
+        <item>Data Entry Specialist</item>
+        <item>Graphic Designer</item>
+        <item>UX/UI Designer</item>
+        <item>Interior Designer</item>
+        <item>Web Developer/Designer</item>
+        <item>Research Analyst</item>
+        <item>Lab Technician</item>
+        <item>Product Development Scientist</item>
+        <item>R&amp;D Engineer</item>
+        <item>Project Manager</item>
+        <item>Program Coordinator</item>
+        <item>Project Management Officer</item>
+        <item>Scrum Master</item>
+        <item>Paralegal</item>
+        <item>Legal Assistant</item>
+        <item>Contract Specialist</item>
+        <item>Corporate Counsel</item>
+        <item>Environmental Scientist</item>
+        <item>Sustainability Consultant</item>
+        <item>Renewable Energy Analyst</item>
+        <item>Conservation Specialist</item>
+    </string-array>
+</resources>
+

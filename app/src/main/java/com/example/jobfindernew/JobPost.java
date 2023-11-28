@@ -27,5 +27,17 @@ public class JobPost {
 
     @ColumnInfo(name = "createdAt")
     public String createdAt;
+
+    public String getPosition() {
+        return this.position;
+    }
+
+    public String getIndustry() {
+        return this.industry;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
 }
 

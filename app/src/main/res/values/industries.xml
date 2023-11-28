@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industry_array">
+        <item>All</item>
+        <item>Information Technology (IT)</item>
+        <item>Healthcare</item>
+        <item>Finance</item>
+        <item>Education</item>
+        <item>Marketing and Advertising</item>
+        <item>Sales</item>
+        <item>Human Resources (HR)</item>
+        <item>Engineering</item>
+        <item>Manufacturing and Production</item>
+        <item>Customer Service</item>
+        <item>Retail</item>
+        <item>Hospitality and Tourism</item>
+        <item>Legal</item>
+        <item>Research and Development</item>
+        <item>Environmental Sustainability</item>
+        <item>Media and Entertainment</item>
+        <item>Agriculture and Food Production</item>
+        <item>Nonprofit and Social Services</item>
+        <item>Government and Public Administration</item>
+        <item>Telecommunications</item>
+    </string-array>
+</resources>

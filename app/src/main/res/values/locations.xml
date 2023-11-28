@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location_array">
+        <item>All</item>
+        <item>Ho Chi Minh City (HCMC)</item>
+        <item>Hanoi</item>
+        <item>Da Nang</item>
+        <item>Hai Phong</item>
+        <item>Can Tho</item>
+        <item>Bien Hoa</item>
+        <item>Vung Tau</item>
+        <item>Nha Trang</item>
+        <item>Quy Nhon</item>
+        <item>Da Lat</item>
+    </string-array>
+</resources>
