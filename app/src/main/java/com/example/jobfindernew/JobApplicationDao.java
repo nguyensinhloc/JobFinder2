@@ -27,5 +27,9 @@ public interface JobApplicationDao {
 
     @Query("SELECT * FROM JobApplication WHERE jobId = :jobId")
     List<JobApplication> getApplicationsByJobId(int jobId);
+
+    @Query("SELECT * FROM JobApplication")
+    List<JobApplication> getAllJobApplications();
+
 }
 
