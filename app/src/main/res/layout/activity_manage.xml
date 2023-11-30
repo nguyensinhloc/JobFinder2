@@ -29,6 +29,7 @@
         android:layout_margin="8dp"
         android:background="@null"
         android:src="@drawable/edit_icon"
+        android:contentDescription="Edit button"
         app:layout_constraintEnd_toStartOf="@id/btn_delete"
         app:layout_constraintBottom_toBottomOf="@id/rv_job_list" />
 
@@ -39,6 +40,7 @@
         android:layout_margin="8dp"
         android:background="@null"
         android:src="@drawable/delete_icon"
+        android:contentDescription="Delete button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/rv_job_list" />
 
