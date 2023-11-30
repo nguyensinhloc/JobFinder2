@@ -22,14 +22,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Nhập vị trí công việc" />
+            android:hint="Nhập vị trí công việc"
+            android:minHeight="48dp" />
 
         <Spinner
             android:id="@+id/sp_industry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:entries="@array/industry_array" />
+            android:entries="@array/industry_array"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_description"
@@ -37,7 +39,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Nhập mô tả công việc"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_requirement"
@@ -45,14 +48,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:hint="Nhập yêu cầu công việc"
-            android:inputType="textMultiLine" />
+            android:inputType="textMultiLine"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_contact"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Nhập thông tin liên hệ" />
+            android:hint="Nhập thông tin liên hệ"
+            android:minHeight="48dp" />
 
         <Button
             android:id="@+id/btn_post"
