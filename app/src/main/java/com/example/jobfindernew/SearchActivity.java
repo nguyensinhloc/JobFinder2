@@ -148,7 +148,7 @@ public class SearchActivity extends AppCompatActivity {
             SearchActivity.this.pbLoading.setVisibility(View.GONE);
 
             // Update RecyclerView with filtered data
-            final JobPostAdapter adapter = new JobPostAdapter(filteredPosts);
+            final JobPostAdapter adapter = new JobPostAdapter();
             SearchActivity.this.rvJobList.setAdapter(adapter);
         }
     }

@@ -8,14 +8,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class JobPostAdapter extends RecyclerView.Adapter<JobPostAdapter.ViewHolder> {
 
-    private final List<JobPost> jobPosts;
+    private List<JobPost> jobPosts = new ArrayList<>();
 
-    public JobPostAdapter(List<JobPost> jobPosts) {
+    public void setJobPosts(List<JobPost> jobPosts) {
         this.jobPosts = jobPosts;
+        notifyDataSetChanged();
     }
 
     @NonNull
